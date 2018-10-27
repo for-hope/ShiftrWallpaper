@@ -7,20 +7,8 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity" tools:layout_editor_absoluteY="81dp">
 
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-    </FrameLayout>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            android:id="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"/>
     <Button
-            android:text="Button"
+            android:text="@string/set_wallpaper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/set"
@@ -32,12 +20,14 @@
             android:id="@+id/preview"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.446"/>
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.446"
+            android:contentDescription="mojaveee"/>
     <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp" tools:srcCompat="@tools:sample/avatars[3]"
             android:id="@+id/perview2"
             app:layout_constraintTop_toTopOf="@+id/preview" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/preview" app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintBottom_toBottomOf="@+id/preview" app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="earthhh"/>
 
 </android.support.constraint.ConstraintLayout>
